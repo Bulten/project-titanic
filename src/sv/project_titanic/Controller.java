@@ -145,7 +145,7 @@ public class Controller {
 				int x = newCoord.getX();
 				int y = newCoord.getY();
 				
-				int status = board.fieldStatus(x,y);
+				int status = board.getfieldStatus(x,y);
 				
 				if( status == 2){
 					throw new FieldOccupiedException(newCoord, "Field occupied.");
